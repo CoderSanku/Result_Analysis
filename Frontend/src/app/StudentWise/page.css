@@ -1,0 +1,103 @@
+.maindiv {
+    margin: 50px 0;
+    text-align: center; /* Center the heading */
+    background: linear-gradient(to bottom, #f8f9fa, #e9f2ff);
+    flex: 1; /* Allow the content to take up available space */
+  }
+  
+  /* Header styles */
+  .maindiv h1 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 700;
+    transition: all 0.3s ease; /* Smooth transition for the heading */
+  }
+  
+  /* Header hover effects */
+  .maindiv h1:hover {
+    color: #007bff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
+  
+  /* Footer styles */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Overall page layout to ensure the footer stays at the bottom */
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  /* Ensures the main content takes up the remaining space */
+  .maindiv {
+    flex-grow: 1;
+    
+  }
+
+  /* Add styles for the form */
+/* Style for the form container */
+.form-style {
+    display: flex;
+    margin-left: 125px;
+    align-items: center;
+    gap: 20px; /*Space between form elements*/
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 75%;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  /* Label styling */
+  .form-style label {
+    font-weight: bold;
+    margin-right: 8px;
+    /* white-space: nowrap; Prevent labels from wrapping */
+  }
+  
+  /* Input and select styling */
+  .form-style input,
+  .form-style .select-uniid {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 180px;
+  }
+  
+  .form-style input:focus,
+  .form-style .select-uniid:focus-within {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Adjustments for responsiveness */
+  @media (max-width: 768px) {
+    .form-style {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .form-style label {
+      margin-bottom: 4px;
+    }
+  }
+  
+  
